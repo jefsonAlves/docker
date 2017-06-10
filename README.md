@@ -1,3 +1,6 @@
+> O Docker é uma aplicação que torna simples e fácil executar processos de aplicação em um contêiner, que é como uma máquina virtual, apenas mais portátil, mais amigável, e mais dependente do sistema operacional do host. Para uma introdução detalhada aos diferentes componentes do contêiner Docker, confira The Docker Ecosystem: An Introduction to Common Components.
+Existem dois métodos para a instalação do Docker no Ubuntu 16.04. Um dos métodos envolve instalá-lo em uma instalação existente do sistema operacional. A outra envolve lançar um servidor com uma ferramenta chamada Docker Machine que instala o Docker automaticamente nele
+
 > Instalação do Docker e configurações
 > Faça atualização dos pacotes do linux utilizando esse comando abaixo;
 ``` 
@@ -23,7 +26,7 @@ apt-get update
 apt-cache policy docker-engine
 ``` 
  
-> Ao digitar e executar o comando acima terá que receber algo semelhante a imagem abaixo;
+> digitado e executar o comando acima, terá que receber algo semelhante a imagem abaixo;
 ``` 
 Output of apt-cache policy docker-engine
 docker-engine:
@@ -57,17 +60,17 @@ docker search ubuntu
 # ao digitar o comando acima mostrará:
 ``` 
 NAME                              DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
-ubuntu                            Ubuntu is a Debian-based Linux operati...   3808      [OK]       
-ubuntu-upstart                    Upstart is an event-based replacement...   61        [OK]       
-torusware/speedus-ubuntu                     Always updated official U ...   25        [OK]
-rastasheep/ubuntu-sshd            Dockerized SSH service, b ...              24        [OK]
-ubuntu-debootstrap                debootstrap --variant=minbase -           23        [OK]       
-nickistre/ubuntu-lamp             LAMP server on Ubuntu                        6         [OK]
-nickistre/ubuntu-lamp-wordpress   LAMP on Ubuntu with wp                 5        [OK]
-nuagebec/ubuntu                   Simple always updated Ubunt...              4       [OK]
-nimmis/ubuntu                     This is a docker images differe...             4        [OK]
-maxexcloo/ubuntu                  Docker base image built on U ...             2        [OK]
-admiringworm/ubuntu               Base ubuntu images based  ...             1        [OK]
+ubuntu                            Ubuntu is a Debian-based Linux operati...        3808        [OK]       
+ubuntu-upstart                    Upstart is an event-based replacement...           61        [OK]       
+torusware/speedus-ubuntu          Always updated official U ...                      25        [OK]
+rastasheep/ubuntu-sshd            Dockerized SSH service, b ...                      24        [OK]
+ubuntu-debootstrap                debootstrap --variant=minbase -                    23        [OK]       
+nickistre/ubuntu-lamp             LAMP server on Ubuntu                               6        [OK]
+nickistre/ubuntu-lamp-wordpress   LAMP on Ubuntu with wp                              5        [OK]
+nuagebec/ubuntu                   Simple always updated Ubunt...                      4        [OK]
+nimmis/ubuntu                     This is a docker images differe...                  4        [OK]
+maxexcloo/ubuntu                  Docker base image built on U ...                    2        [OK]
+admiringworm/ubuntu               Base ubuntu images based  ...                       1        [OK]
 ``` 
 
 > Ao identificar a imagem que deseja digite o comando “docker pull” e mais o [nome da imagem desejado] ficará assim;
